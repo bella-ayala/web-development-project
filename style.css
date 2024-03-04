@@ -1,57 +1,713 @@
-.header{
-    background-color: #FF1801;
+/* Navigation bar display for all pages*/
+
+.header{  
+    background-color: #FF1801; /*red color */
     overflow: hidden;
 }
 .header h2{
-    display: inline-block; /* Display the links as inline-block */
-    color: white;
+    display: inline-block; /* inline-block links are horizontal */
+    color: white;  /*text is white in header */
     margin-left: 25px;
 }
 .header h3{
-  color: #f2f2f2;
+  color: #f2f2f2;/*text is white in header */
   font-size: 20px;
   float:right;
-  padding: 0px 60px; /* Padding */
+  padding: 0px 60px; /* Padding seperation*/
 }
 
-.header h3:hover {
-    background-color: #ddd; /* Change background color on hover */
-    color: black; /* Change text color on hover */
+.header h3:hover {/* hover changes font color and background color*/
+    background-color: #ddd; /* white */
+    color: black; /* black */
 }
 
   .navigation {
     overflow: hidden; /* Clear floats */
-    background-color: #333; /* Background color */
+    background-color: #333; /* gray color */
     font-size: 25px;
-    text-align: center;
+    text-align: center; /*text is centered in each of it own hover box */
 }
 
 .tabs {
-    float: left; /* Float the links to the left */
+    float: left; /* Float the links to the left of the navigation bar */
 }
 
 .tabs a {
-    display: inline-block; /* Display the links as inline-block */
-    color: #f2f2f2; /* Text color */
-    text-align: center; /* Center-align text */
-    padding: 14px 16px; /* Padding */
-    text-decoration: none; /* Remove underline */
+    display: inline-block; /* inline-block links are horizontal */
+    color: #f2f2f2; /* white text color */
+    text-align: center; 
+    padding: 14px 16px; /* seperation in the tab box*/
+    text-decoration: none; /* takes line out from words */
 }
 
 .tabs a:hover {
-    background-color: #ddd; /* Change background color on hover */
-    color: black; /* Change text color on hover */
+    background-color: #ddd; /* hover changes font color and background color*/
+    color: black; 
 }
 
 .logo {
-    float: right; /* Float the logo to the right */
+    float: right; /* display logo all the way to the right */
 }
 
 .logo img {
-    height: 50px; /* Adjust height of the logo */
-    padding: 10px; /* Add padding around the logo */
+    height: 50px; /* size of logo */
+    padding: 10px; /* seperation in nav bar*/
+}
+/* ------Course images/grid--------------------------------------------------------------------------------------------------------------------------------------------- */
+  .courses {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* columns in the row for track images */
+    grid-template-rows: repeat(3, 1fr);/* rows for track images */
+    margin: 0 auto; /* centers the grid */
+    max-width: 1200px; /* maximum width for the grid */
+
 }
 
-img.courses{
+.courses {
+    padding: 10px;
+    padding-left: 80px;/* spacing on from the left */
+    box-sizing: border-box; /* border around images*/
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 1); /* gray drop shadow */
+
+}
+
+.bahrain h2 {
+    margin-top: 3px; /* bring the h2's closer together and get rid of spacing */
+    margin-bottom: 5px; 
+}
+
+.bahrain {
+    position: relative; /* put class in normal postion */
+    
+}
+
+.bahrain .image {/* creates the opacity of the image */
+    opacity: 1;
+    display: block; 
+    transition: .5s ease;/* slow transition for hover */
+    
+}
+
+.bahrain .timeappear { /* to show timezone text with hover*/
+    transition: .5s ease; 
+    opacity: 0;
+    position: absolute;
+    top: 50%;/* positioning in image box */
+    left: 50%;
+    transform: translate(-75%, -50%); /*position of box */
+    text-align: center;
+}
+
+.bahrain:hover .image {
+    opacity: 0.3; /* hover of pseudocode over image */
+}
+
+.bahrain:hover .timeappear {
+    opacity: 1;/* text box of time */
+}
+
+#bahrainTime {
+    background-color:#FF1801; /* red color of background box */
+    color: white;/* white text color of timezone */
+    font-size: 16px;
+    padding: 6px 14px;
+    text-align: center;/* center of box */
+}
+
+.suadiarabia h2 { /* bring the h2's closer together and get rid of spacing */
+    margin-top: 3px;
+    margin-bottom: 5px; 
+}
+
+.suadiarabia {/* put class in normal postion */
+    position: relative;
+    
+}
+
+.suadiarabia .image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;/* slow transition for hover */
+  
+}
+
+.suadiarabia .timeappear {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    text-align: center;
+}
+
+.suadiarabia:hover .image {
+    opacity: 0.3;/* hover of pseudocode over image */
+}
+
+.suadiarabia:hover .timeappear {
     opacity: 1;
 }
+
+#jeddahTime {
+    background-color:#FF1801; /* red color of background box */
+    color: white;/* white text color of timezone */
+    font-size: 16px;
+    padding: 6px 14px;
+    text-align: center;/* center of box */
+}
+
+.australia h2 { /* bring the h2's closer together and get rid of spacing */
+    margin-top: 3px;
+    margin-bottom: 5px;  
+}
+
+.australia {
+    position: relative;/* put class in normal postion */
+    
+}
+
+.australia .image {
+    opacity: 1;
+    display: block;
+    
+    transition: .5s ease;/* slow transition for hover */
+   
+}
+
+.australia .timeappear {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    text-align: center;
+}
+
+.australia:hover .image {
+    opacity: 0.3;/* hover of pseudocode over image */
+}
+
+.australia:hover .timeappear {
+    opacity: 1;
+}
+
+#melbourneTime {
+    background-color:#FF1801; /* red color of background box */
+    color: white;/* white text color of timezone */
+    font-size: 16px;
+    padding: 6px 14px;
+    text-align: center;/* center of box */
+}
+
+.japan h2 { /* bring the h2's closer together and get rid of spacing */
+    margin-top: 3px;
+    margin-bottom: 5px; 
+}
+
+.japan {
+    position: relative;/* put class in normal postion */
+    
+}
+
+.japan .image {
+    opacity: 1;
+    display: block;
+    
+    transition: .5s ease;/* slow transition for hover */
+    
+}
+
+.japan .timeappear {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    text-align: center;
+}
+
+.japan:hover .image {
+    opacity: 0.3;/* hover of pseudocode over image */
+}
+
+.japan:hover .timeappear {
+    opacity: 1;
+}
+
+#tokyoTime {
+    background-color:#FF1801; /* red color of background box */
+    color: white;/* white text color of timezone */
+    font-size: 16px;
+    padding: 6px 14px;
+    text-align: center;/* center of box */
+}
+
+.china h2 { /* bring the h2's closer together and get rid of spacing */
+    margin-top: 3px;
+    margin-bottom: 5px; 
+}
+
+.china {
+    position: relative;/* put class in normal postion */
+    
+}
+
+.china .image {
+    opacity: 1;
+    display: block;
+    
+    transition: .5s ease;/* slow transition for hover */
+  
+}
+
+.china .timeappear {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    text-align: center;
+}
+
+.china:hover .image {
+    opacity: 0.3;/* hover of pseudocode over image */
+}
+
+.china:hover .timeappear {
+    opacity: 1;
+}
+
+#shanghaiTime {
+    background-color:#FF1801; /* red color of background box */
+    color: white;/* white text color of timezone */
+    font-size: 16px;
+    padding: 6px 14px;
+    text-align: center;/* center of box */
+}
+
+.miami h2 {/* bring the h2's closer together and get rid of spacing */
+    margin-top: 3px;
+    margin-bottom: 5px;  
+}
+
+.miami {
+    position: relative;/* put class in normal postion */
+    
+}
+
+.miami .image {
+    opacity: 1;
+    display: block;
+    
+    transition: .5s ease;/* slow transition for hover */
+   
+}
+
+.miami .timeappear {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    text-align: center;
+}
+
+.miami:hover .image {
+    opacity: 0.3;/* hover of pseudocode over image */
+}
+
+.miami:hover .timeappear {
+    opacity: 1;
+}
+
+#miamiTime {
+    background-color:#FF1801; /* red color of background box */
+    color: white;/* white text color of timezone */
+    font-size: 16px;
+    padding: 6px 14px;
+    text-align: center;/* center of box */
+}
+
+.italy h2 {/* bring the h2's closer together and get rid of spacing */
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.italy {
+    position: relative;/* put class in normal postion */
+    
+}
+
+.italy .image {
+    opacity: 1;
+    display: block;
+    
+    transition: .5s ease;/* slow transition for hover */
+   
+}
+
+.italy .timeappear {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    text-align: center;
+}
+
+.italy:hover .image {
+    opacity: 0.3;/* hover of pseudocode over image */
+}
+
+.italy:hover .timeappear {
+    opacity: 1;
+}
+
+#imolaTime {
+    background-color:#FF1801; /* red color of background box */
+    color: white;/* white text color of timezone */
+    font-size: 16px;
+    padding: 6px 14px;
+    text-align: center;/* center of box */
+}
+
+.monaco h2 {/* bring the h2's closer together and get rid of spacing */
+    margin-top: 3px;
+    margin-bottom: 5px; 
+}
+
+.monaco {
+    position: relative;/* put class in normal postion */
+    
+}
+
+.monaco .image {
+    opacity: 1;
+    display: block;
+    
+    transition: .5s ease;/* slow transition for hover */
+   
+}
+
+.monaco .timeappear {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    text-align: center;
+}
+
+.monaco:hover .image {
+    opacity: 0.3;/* hover of pseudocode over image */
+}
+
+.monaco:hover .timeappear {
+    opacity: 1;
+}
+
+#monacoTime {
+    background-color:#FF1801; /* red color of background box */
+    color: white;/* white text color of timezone */
+    font-size: 16px;
+    padding: 6px 14px;
+    text-align: center;/* center of box */
+}
+
+.canada h2 {/* bring the h2's closer together and get rid of spacing */
+    margin-top: 3px;
+    margin-bottom: 5px; 
+}
+
+.canada {
+    position: relative;/* put class in normal postion */
+    
+}
+
+.canada .image {
+    opacity: 1;
+    display: block;
+    
+    transition: .5s ease;/* slow transition for hover */
+   
+}
+
+.canada .timeappear {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    text-align: center;
+}
+
+.canada:hover .image {
+    opacity: 0.3;/* hover of pseudocode over image */
+}
+
+.canada:hover .timeappear {
+    opacity: 1;
+}
+
+#montrealTime {
+    background-color:#FF1801;
+    background-color:#FF1801; /* red color of background box */
+    color: white;/* white text color of timezone */
+    font-size: 16px;
+    padding: 6px 14px;
+    text-align: center;/* center of box */
+}
+
+.spain h2 {/* bring the h2's closer together and get rid of spacing */
+    margin-top: 3px;
+    margin-bottom: 5px; 
+}
+
+.spain {
+    position: relative;/* put class in normal postion */
+    
+}
+
+.spain .image {
+    opacity: 1;
+    display: block;
+    
+    transition: .5s ease;/* slow transition for hover */
+
+}
+
+.spain .timeappear {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    text-align: center;
+}
+
+.spain:hover .image {
+    opacity: 0.3;/* hover of pseudocode over image */
+}
+
+.spain:hover .timeappear {
+    opacity: 1;
+}
+
+#catalunyaTime {
+    background-color:#FF1801; /* red color of background box */
+    color: white;/* white text color of timezone */
+    font-size: 16px;
+    padding: 6px 14px;
+    text-align: center;/* center of box */
+}
+
+.austria h2 {/* bring the h2's closer together and get rid of spacing */
+    margin-top: 3px;
+    margin-bottom: 5px; 
+}
+
+.austria {
+    position: relative;/* put class in normal postion */
+    
+}
+
+.austria .image {
+    opacity: 1;
+    display: block;
+    
+    transition: .5s ease;/* slow transition for hover */
+   
+}
+
+.austria .timeappear {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    text-align: center;
+}
+
+.austria:hover .image {
+    opacity: 0.3;/* hover of pseudocode over image */
+}
+
+.austria:hover .timeappear {
+    opacity: 1;
+}
+
+#spielbergTime {
+    background-color:#FF1801; /* red color of background box */
+    color: white;/* white text color of timezone */
+    font-size: 16px;
+    padding: 6px 14px;
+    text-align: center;/* center of box */
+}
+
+.greatBritain h2 {/* bring the h2's closer together and get rid of spacing */
+    margin-top: 3px;
+    margin-bottom: 5px; 
+}
+
+.greatBritain {
+    position: relative;/* put class in normal postion */
+    
+}
+
+.greatBritain .image {
+    opacity: 1;
+    display: block;
+    
+    transition: .5s ease;/* slow transition for hover */
+ 
+}
+
+.greatBritain .timeappear {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    text-align: center;
+}
+
+.greatBritain:hover .image {
+    opacity: 0.3;/* hover of pseudocode over image */
+}
+
+.greatBritain:hover .timeappear {
+    opacity: 1;
+}
+
+#silverstoneTime {
+    background-color:#FF1801; /* red color of background box */
+    color: white;/* white text color of timezone */
+    font-size: 16px;
+    padding: 6px 14px;
+    text-align: center;/* center of box */
+}
+
+/* --------drivers.html------------------------------------------------------------------------------------------------------------------------------------ */
+
+.teams {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);/* creates grid  */
+    gap: 10px;/* seperation between boxes */
+}
+
+.teams a {
+    text-align: center; /* centers link in box */
+    padding: 10px;
+    background-color: red;
+    text-decoration: none; /* gets rid of underline */
+    color: #ffffff;
+    border-radius: 3px; /* shape of box */
+}
+
+
+.redbull {
+    position: relative; /* position is normal */
+    margin-bottom: 10px;
+    padding-left: 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* columns in the row for driver images */
+    grid-template-rows: repeat(1, 1fr);/* rows for driver images */
+    margin: 0 auto; /* centers the grid */
+    max-width: 1200px; /* maximum width for the grid */
+}
+
+.racer1 {
+    position: relative; /* Position the overlay relative to the racer image */
+    display: inline-block; /* Make sure overlay fits to the size of the image */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%; /* hover over racer */
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.8); /* black hover*/
+    opacity: 0; /* hidden before hover */
+    transition: opacity 0.3s; /* slow transition on hover */
+}
+
+.racer1:hover .overlay {
+    opacity: 1; /* Show opacity when hover*/
+}
+.racer1:hover .overlay p {
+    color: red;  /* font color is red on hover */
+}
+
+
+.redbullcar img{
+    float: left;  /* car image is on left side */
+    margin-top: 50px;
+}
+
+.redbull img {
+    margin-right: 80px; /* seperation between driver images */
+}
+
+ .williams {
+    margin-bottom: 10px;
+    padding-left: 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* columns in the row for driver images */
+    grid-template-rows: repeat(1, 1fr);/* rows for driver images */
+    margin: 0 auto; /* centers the grid */
+    max-width: 1200px; /* maximum width for the grid */
+}
+
+.williamscar img{
+    float: left; /* car image is on left side */
+    margin-top: 50px;
+}
+
+.williams img {
+    margin-right: 80px; /* seperation between driver images */
+}
+
+
+/* ------Interaction Page--------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+.user {
+    flex: 3;
+    padding: 10px;
+    padding-left: 80px;/* spacing on from the left */
+    box-sizing: border-box; /* border around images*/
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 1); /* gray drop shadow */
+
+}
+.container {
+    display: flex;  /* width length of class */
+    justify-content: space-between;
+}
+
+.media {
+    flex: 1; /*  width of the media section */
+    margin-left: 20px; /* seperation of spaces */
+}
+
+
+
+
+
+
+
+
+
+
+  

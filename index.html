@@ -3,24 +3,25 @@
 <head>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Makes page responsive-->
-    <link rel="stylesheet" href="style.css">
-    <title>Formula 1 Fan Page</title>
+    <link rel="stylesheet" href="style.css">  <!--Links to CSS page-->
+    <title>Formula 1 Fan Page</title><!--Title-->
 </head>
 <body>
-    <script src="main.js"></script>
-    <div class="header">
+    <script src="main.js"></script><!--Links to javascript page-->
+
+    <div class="header"><!--Header of nav bar-->
         <h2>Formula 1</h2>
         <h3>Tickets</h3>
     </div>
 
-    <div class="navigation">
+    <div class="navigation"> <!--Links/tabs of nav bar to get to other pages-->
         <div class="tabs">
             <a href="index.html">Home</a>
             <a href="drivers.html">Drivers</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            <a href="interaction.html">Interaction</a>
+           
         </div>
-        <div class="logo">
+        <div class="logo"> <!--Image links to Official F1 page-->
             <a href="https://www.formula1.com/">
                 <img src="images/F1logo.png" alt="Formula 1 official logo">
             </a>
@@ -28,94 +29,157 @@
     </div>
 
     <div class="body">
-        <div class="content1">
+        <div class="content1"> <!--start of body text here-->
             <h1>What is Formula 1?</h1>
-            <p>This is f1</p>
+            <p>This is f1 (description will go here)</p>
         </div>
 
+        
+        <h1>2024 Schedule</h1>
+        <div class="courses"> <!--main class for all image/hover effect of track images-->
 
-        <div class="courses">
-            <h1>2024 Schedule</h1>
+                <div class="bahrain"><!--class for different locations-->
+                    <h2>Time in</h2><!--Label of different locations-->
+                    <h2>Sakhir, Bahrain</h2>
+                    <div class="container"> <!--class to design a hover and text-->
+                        <img class="image" src="images/track1.png" alt="Bahrain Track"> <!--Shows track image-->
+                        <div class="timeappear">
+                            <div class="text"><p id="bahrainTime"></p></div><!--Calls for the JS timezone-->
+                        </div>
+                    </div>
+                </div>
 
-            <h2>Bahrain</h2>
-            <img src="images/course1.png" alt="">
-           
-            <p id="localTime"></p>
+            
+                <div class="suadiarabia"><!--class for different locations-->
+                    <h2>Time in</h2><!--Label of different locations-->
+                    <h2>Jeddah, Saudi Arabia</h2>
+                    <div class="container"><!--class to design a hover and text-->
+                        <img class="image" src="images/track2.png" alt="Saudi Arabia Track"><!--Shows track image-->
+                        <div class="timeappear">
+                            <div class="text"><p id="jeddahTime"></p></div><!--Calls for the JS timezone-->
+                        </div>
+                    </div>
+                </div>
 
-            <h2>Time in Saudi Arabia</h2>
-            <p id="nyTime"></p>
+                <div class="australia"><!--class for different locations-->
+                    <h2>Time in</h2><!--Label of different locations-->
+                    <h2>Melbourne, Australia</h2>
+                    <div class="container"><!--class to design a hover and text-->
+                        <img class="image" src="images/track3.png" alt="Australia Track"><!--Shows track image-->
+                        <div class="timeappear">
+                            <div class="text"><p id="melbourneTime"></p></div><!--Calls for the JS timezone-->
+                        </div>
+                    </div>
+                </div>
 
-            <h2>Time in Australia</h2>
-            <p id="londonTime"></p>
+                <div class="japan"><!--class for different locations-->
+                    <h2>Time in</h2><!--Label of different locations-->
+                    <h2>Susuka, Japan</h2>
+                    <div class="container"><!--class to design a hover and text-->
+                        <img class="image" src="images/track4.png" alt="Japan Track"><!--Shows track image-->
+                        <div class="timeappear">
+                            <div class="text"><p id="tokyoTime"></p></div><!--Calls for the JS timezone-->
+                        </div>
+                    </div>
+                </div>
 
-            <h2>Japan</h2>
-            <p id="localTime"></p>
+                <div class="china"><!--class for different locations-->
+                    <h2>Time in</h2><!--Label of different locations-->
+                    <h2>Shanghai, China</h2>
+                    <div class="container"><!--class to design a hover and text-->
+                        <img class="image" src="images/track5.png" alt="China Track"><!--Shows track image-->
+                        <div class="timeappear">
+                            <div class="text"><p id="shanghaiTime"></p></div><!--Calls for the JS timezone-->
+                        </div>
+                    </div>
+                </div>
 
-            <h2>Time in China</h2>
-            <p id="nyTime"></p>
+                <div class="miami"><!--class for different locations-->
+                    <h2>Time in </h2><!--Label of different locations-->
+                    <h2>Miami, USA</h2>
+                    <div class="container"><!--class to design a hover and text-->
+                        <img class="image" src="images/track6.png" alt="Miami Track"><!--Shows track image-->
+                        <div class="timeappear">
+                            <div class="text"><p id="miamiTime"></p></div><!--Calls for the JS timezone-->
+                        </div>
+                    </div>
+                </div>
 
-            <h2>Time in United States Miami</h2>
-            <p id="londonTime"></p>
+                <div class="italy"><!--class for different locations-->
+                    <h2>Time in </h2><!--Label of different locations-->
+                    <h2>Imola, Italy</h2>
+                    <div class="container"><!--class to design a hover and text-->
+                        <img class="image" src="images/track7.png" alt="Italy Track"><!--Shows track image-->
+                        <div class="timeappear">
+                            <div class="text"><p id="imolaTime"></p></div><!--Calls for the JS timezone-->
+                        </div>
+                    </div>
+                </div>
 
-            <h2>Italy</h2>
-            <p id="localTime"></p>
+                <div class="monaco"><!--class for different locations-->
+                    <h2>Time in</h2><!--Label of different locations-->
+                    <h2>Monaco</h2>
+                    <div class="container"><!--class to design a hover and text-->
+                        <img class="image" src="images/track8.png" alt="Monaco Track"><!--Shows track image-->
+                        <div class="timeappear">
+                            <div class="text"><p id="monacoTime"></p></div><!--Calls for the JS timezone-->
+                        </div>
+                    </div>
+                </div>
 
-            <h2>Time in Monaco</h2>
-            <p id="nyTime"></p>
+                <div class="canada"><!--class for different locations-->
+                    <h2>Time in</h2><!--Label of different locations-->
+                    <h2>Montréal, Canada</h2>
+                    <div class="container"><!--class to design a hover and text-->
+                        <img class="image" src="images/track9.png" alt="Canada Track"><!--Shows track image-->
+                        <div class="timeappear">
+                            <div class="text"><p id="montrealTime"></p></div><!--Calls for the JS timezone-->
+                        </div>
+                    </div>
+                </div>
 
-            <h2>Time in Canada</h2>
-            <p id="londonTime"></p>
+                <div class="spain"><!--class for different locations-->
+                    <h2>Time in</h2><!--Label of different locations-->
+                    <h2>Catalunya, Spain</h2>
+                    <div class="container"><!--class to design a hover and text-->
+                        <img class="image" src="images/track10.png" alt="Spain Track"><!--Shows track image-->
+                        <div class="timeappear">
+                            <div class="text"><p id="catalunyaTime"></p></div><!--Calls for the JS timezone-->
+                        </div>
+                    </div>
+                </div>
 
-            <h2>Spain</h2>
-            <p id="localTime"></p>
+                <div class="austria"><!--class for different locations-->
+                    <h2>Time in</h2><!--Label of different locations-->
+                    <h2>Spielberg, Austria</h2>
+                    <div class="container"><!--class to design a hover and text-->
+                        <img class="image" src="images/track11.png" alt="Austria Track"><!--Shows track image-->
+                        <div class="timeappear">
+                            <div class="text"><p id="spielbergTime"></p></div><!--Calls for the JS timezone-->
+                        </div>
+                    </div>
+                </div>
 
-            <h2>Time in Austria</h2>
-            <p id="nyTime"></p>
-
-            <h2>Time in Great Britain</h2>
-            <p id="londonTime"></p>
-
-            <h2>Hungary</h2>
-            <p id="localTime"></p>
-
-            <h2>Time in Belgium</h2>
-            <p id="nyTime"></p>
-
-            <h2>Time in Netherlands</h2>
-            <p id="londonTime"></p>
-
-            <h2>Italy</h2>
-            <p id="localTime"></p>
-
-            <h2>Time in Azerbaijan</h2>
-            <p id="nyTime"></p>
-
-            <h2>Time in Singapore</h2>
-            <p id="londonTime"></p>
-
-            <h2>United States Texas</h2>
-            <p id="localTime"></p>
-
-            <h2>Time in Mexico</h2>
-            <p id="nyTime"></p>
-
-            <h2>Time in Brazil</h2>
-            <p id="londonTime"></p>
-
-            <h2>United States Vegas</h2>
-            <p id="localTime"></p>
-
-            <h2>Time in Qatar</h2>
-            <p id="nyTime"></p>
-
-            <h2>Time in Abu Dhabi</h2>
-            <p id="londonTime"></p>
-        </div>
-
-        <div class="standings2023">
-
-        </div>
+                <div class="greatBritain"><!--class for different locations-->
+                    <h2>Time in</h2><!--Label of different locations-->
+                    <h2>Silverstone, Great Britain</h2>
+                    <div class="container"><!--class to design a hover and text-->
+                        <img class="image" src="images/track12.png" alt="Great Britain Track"><!--Shows track image-->
+                        <div class="timeappear">
+                            <div class="text"><p id="silverstoneTime"></p></div><!--Calls for the JS timezone-->
+                        </div>
+                    </div>
+                </div>
+       
+       
+       
+       
+       
+       
+            </div>
+            
     </div>
+<p>Kennesaw State Univerity Project</p><!-- footer -->
 
 
 </body>

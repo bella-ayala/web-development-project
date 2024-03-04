@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Drivers</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Makes page responsive-->
+    <link rel="stylesheet" href="style.css">  <!--Links to CSS page-->
+    <title>Formula 1 Fan Page</title><!--Title-->
 </head>
 <body>
-    <script src="main.js"></script>
-    <div class="header">
-        <h2>Formula 1 Fan Page</h2>
+    <script src="main.js"></script><!--Links to javascript page-->
+
+    <div class="header"><!--Header of nav bar-->
+        <h2>Formula 1</h2>
         <h3>Tickets</h3>
     </div>
 
-    <div class="navigation">
+    <div class="navigation"> <!--Links/tabs of nav bar to get to other pages-->
         <div class="tabs">
             <a href="index.html">Home</a>
             <a href="drivers.html">Drivers</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            <a href="interaction.html">Interaction</a>
+           
         </div>
-        <div class="logo">
+        <div class="logo"> <!--Image links to Official F1 page-->
             <a href="https://www.formula1.com/">
                 <img src="images/F1logo.png" alt="Formula 1 official logo">
             </a>
         </div>
     </div>
+ 
+    
 
-    <div class="competitors">
-        <h2>2024 Teams and Drivers</h2>
+    
+        <h2>2024 Teams and Drivers</h2> <!--button of all 10 teams to scroll down to team section-->
         <div class="teams">
-            <a href="alpine.html">Alpine</a>
-            <a href="astonmartin.html">Aston Martin</a>
-            <a href="ferrari.html">Ferrari</a>
-            <a href="haas.html">Haas F1 Team</a>
-            <a href="kicksauber.html">Kick Sauber</a>
-            <a href="mclaren.html">McLaren</a>
-            <a href="mercedes.html">Mercedes</a>
-            <a href="rb.html">RB</a>
-            <a href="redbull.html">Red Bull Racing</a>
-            <a href="williams.html">Williams</a>
+            <a href="#alpineTeam">Jump to Alpine</a>
+            <a href="#astonmartinTeam">Jump to Aston Martin</a>
+            <a href="#ferrariTeam">Jump to Ferrari</a>
+            <a href="#haasTeam">Jump to Haas</a>
+            <a href="#kicksauberTeam">Jump to Kick Sauber</a>
+            <a href="#mclarenTeam">Jump to Mclaren</a>
+            <a href="#mercedesTeam">Jump to Mercedes</a>
+            <a href="#rbTeam">Jump to RB</a>
+            <a href="#redbullTeam">Jump to Red Bull</a>
+            <a href="#williamsTeam">Jump to Williams</a>
 
         </div>
 
-        <div class="drivers">
+        <div class="drivers"><!--list of drivers-->
             <a href="ocon.html">Esteban Ocon</a>
             <a href="gasly.html">Pierre Gasly</a>
             <a href="stroll.html">Lance Stroll</a>
@@ -67,9 +70,40 @@
            
 
         </div>
-    </div>
 
-    </div>
+     
+            
+                <h2 id="redbullTeam">This is the Red Bull Team</h2><!-- RedBull label -->
+                <div class="redbullcar">
+                    <img src="images/redbullcar.png" alt="Red Bull car"><!-- car image -->
+                </div>
+                <div class="redbull">
+                    <div class="racer1"><!-- class to get hover -->
+                        <img src="images/racer1.png" alt="Max Verstappen"><!-- driver image -->
+                        <div class="overlay"><!--hover effect -->
+                            <p>Name:  </p>
+                            <p>Wins: </p>
+                        </div> 
+                    </div>
+                    <img src="images/racer2.png" alt="Sergio Perez"><!-- driver image -->
+                </div>
+       
+
+        
+            <h2 id="williamsTeam">This is the Williams Team</h2><!-- Williams label -->
+            <div class="williamscar">
+                <img src="images/williamscar.png" alt="Williams car"><!-- car image -->
+            </div>
+            <div class="williams">
+                <img src="images/racer19.png" alt="Logan Sargeant"><!-- driver image -->
+                <img src="images/racer20.png" alt="Alex Albon"><!-- driver image -->
+            </div>
+        
+
+            <p>will do the same for the 8 teams left</p>
     
+
+    
+            <p>Kennesaw State Univerity Project</p> <!-- footer -->
 </body>
 </html>
