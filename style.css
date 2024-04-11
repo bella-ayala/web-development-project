@@ -26,6 +26,9 @@
     background-color: #333; /* gray color */
     font-size: 25px;
     text-align: center; /*text is centered in each of it own hover box */
+   
+    
+      
 }
 
 .tabs {
@@ -54,6 +57,20 @@
     padding: 10px; /* seperation in nav bar*/
 }
 /* ------Course images/grid--------------------------------------------------------------------------------------------------------------------------------------------- */
+   .content1 p{
+   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 4px; /* Reduced padding inside the box */
+    color: white; /* Text color */
+    border: 3px solid #ccc; /* Border style */
+    padding: 20px; /* Padding inside the box */
+    border-radius: 5px; /* Rounded corners */
+    background-color: rgb(97, 95, 95); /* Background color within the box */
+   }
+
   .courses {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* columns in the row for track images */
@@ -604,6 +621,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);/* creates grid  */
     gap: 10px;/* seperation between boxes */
+    
 }
 
 .teams a {
@@ -615,19 +633,7 @@
     border-radius: 3px; /* shape of box */
 }
 
-
-.redbull {
-    position: relative; /* position is normal */
-    margin-bottom: 10px;
-    padding-left: 20%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* columns in the row for driver images */
-    grid-template-rows: repeat(1, 1fr);/* rows for driver images */
-    margin: 0 auto; /* centers the grid */
-    max-width: 1200px; /* maximum width for the grid */
-}
-
-.racer1 {
+.racer {
     position: relative; /* Position the overlay relative to the racer image */
     display: inline-block; /* Make sure overlay fits to the size of the image */
 }
@@ -643,11 +649,23 @@
     transition: opacity 0.3s; /* slow transition on hover */
 }
 
-.racer1:hover .overlay {
+.racer:hover .overlay {
     opacity: 1; /* Show opacity when hover*/
 }
-.racer1:hover .overlay p {
+.racer:hover .overlay p {
     color: red;  /* font color is red on hover */
+}
+
+
+.redbull {
+    position: relative; /* position is normal */
+    margin-bottom: 10px;
+    padding-left: 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* columns in the row for driver images */
+    grid-template-rows: repeat(1, 1fr);/* rows for driver images */
+    margin: 0 auto; /* centers the grid */
+    max-width: 1200px; /* maximum width for the grid */
 }
 
 
@@ -657,6 +675,174 @@
 }
 
 .redbull img {
+    margin-right: 80px; /* seperation between driver images */
+}
+
+.alpine {
+    position: relative; /* position is normal */
+    margin-bottom: 10px;
+    padding-left: 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* columns in the row for driver images */
+    grid-template-rows: repeat(1, 1fr);/* rows for driver images */
+    margin: 0 auto; /* centers the grid */
+    max-width: 1200px; /* maximum width for the grid */
+}
+
+
+.alpinecar img{
+    float: left;  /* car image is on left side */
+    margin-top: 50px;
+}
+
+.alpine img {
+    margin-right: 80px; /* seperation between driver images */
+}
+
+.aston {
+    position: relative; /* position is normal */
+    margin-bottom: 10px;
+    padding-left: 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* columns in the row for driver images */
+    grid-template-rows: repeat(1, 1fr);/* rows for driver images */
+    margin: 0 auto; /* centers the grid */
+    max-width: 1200px; /* maximum width for the grid */
+}
+
+
+.astoncar img{
+    float: left;  /* car image is on left side */
+    margin-top: 50px;
+}
+
+.aston img {
+    margin-right: 80px; /* seperation between driver images */
+}
+
+.ferrari {
+    position: relative; /* position is normal */
+    margin-bottom: 10px;
+    padding-left: 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* columns in the row for driver images */
+    grid-template-rows: repeat(1, 1fr);/* rows for driver images */
+    margin: 0 auto; /* centers the grid */
+    max-width: 1200px; /* maximum width for the grid */
+}
+
+
+.ferraricar img{
+    float: left;  /* car image is on left side */
+    margin-top: 50px;
+}
+
+.ferrari img {
+    margin-right: 80px; /* seperation between driver images */
+}
+
+.haas {
+    position: relative; /* position is normal */
+    margin-bottom: 10px;
+    padding-left: 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* columns in the row for driver images */
+    grid-template-rows: repeat(1, 1fr);/* rows for driver images */
+    margin: 0 auto; /* centers the grid */
+    max-width: 1200px; /* maximum width for the grid */
+}
+
+
+.haascar img{
+    float: left;  /* car image is on left side */
+    margin-top: 50px;
+}
+
+.haas img {
+    margin-right: 80px; /* seperation between driver images */
+}
+
+.kicksauber {
+    position: relative; /* position is normal */
+    margin-bottom: 10px;
+    padding-left: 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* columns in the row for driver images */
+    grid-template-rows: repeat(1, 1fr);/* rows for driver images */
+    margin: 0 auto; /* centers the grid */
+    max-width: 1200px; /* maximum width for the grid */
+}
+
+
+.kicksaubercar img{
+    float: left;  /* car image is on left side */
+    margin-top: 50px;
+}
+
+.kicksauber img {
+    margin-right: 80px; /* seperation between driver images */
+}
+
+.mclaren {
+    position: relative; /* position is normal */
+    margin-bottom: 10px;
+    padding-left: 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* columns in the row for driver images */
+    grid-template-rows: repeat(1, 1fr);/* rows for driver images */
+    margin: 0 auto; /* centers the grid */
+    max-width: 1200px; /* maximum width for the grid */
+}
+
+
+.mclarencar img{
+    float: left;  /* car image is on left side */
+    margin-top: 50px;
+}
+
+.mclaren img {
+    margin-right: 80px; /* seperation between driver images */
+}
+
+.mercedes {
+    position: relative; /* position is normal */
+    margin-bottom: 10px;
+    padding-left: 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* columns in the row for driver images */
+    grid-template-rows: repeat(1, 1fr);/* rows for driver images */
+    margin: 0 auto; /* centers the grid */
+    max-width: 1200px; /* maximum width for the grid */
+}
+
+
+.mercedescar img{
+    float: left;  /* car image is on left side */
+    margin-top: 50px;
+}
+
+.mercedes img {
+    margin-right: 80px; /* seperation between driver images */
+}
+
+.rb {
+    position: relative; /* position is normal */
+    margin-bottom: 10px;
+    padding-left: 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* columns in the row for driver images */
+    grid-template-rows: repeat(1, 1fr);/* rows for driver images */
+    margin: 0 auto; /* centers the grid */
+    max-width: 1200px; /* maximum width for the grid */
+}
+
+
+.rbcar img{
+    float: left;  /* car image is on left side */
+    margin-top: 50px;
+}
+
+.rb img {
     margin-right: 80px; /* seperation between driver images */
 }
 
@@ -700,6 +886,29 @@
     flex: 1; /*  width of the media section */
     margin-left: 20px; /* seperation of spaces */
 }
+
+/* Style for the image container */
+.media {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    width: 100px; /* Set the width of the images */
+    display: block; /* Ensure images stack vertically */
+    margin-bottom: 10px; /* Add space between stacked images */
+}
+
+/* Style for the image links */
+.image-link {
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Style for the images */
+.small-image {
+    width: 100px; /* Set the width of the images */
+    display: block; /* Ensure images stack vertically */
+    margin-bottom: 10px; /* Add space between stacked images */
+}
+
 
 
 

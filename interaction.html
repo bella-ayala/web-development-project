@@ -8,10 +8,11 @@
 </head>
 <body>
     <script src="main.js"></script><!--Links to javascript page-->
+   
 
     <div class="header"><!--Header of nav bar-->
         <h2>Formula 1</h2>
-        <h3>Tickets</h3>
+        <h3><a href="https://tickets.formula1.com/en">Tickets</a></h3> 
     </div>
 
     <div class="navigation"> <!--Links/tabs of nav bar to get to other pages-->
@@ -33,21 +34,29 @@
     <div class="container">
         <div class="user"><!-- left side of page user form -->
             <p>Put form here</p> <br>
-            <form><!-- user form -->
-                <label for="favdriver">Favorite Driver:</label><br>
-                <input type="text" id="favdriver" name="favdriver"><br>
-                <label for="leastfavdriver">Least Favorite Driver:</label><br>
-                <input type="text" id="leastfavdriver" name="leastfavdriver">
-                <br>
+            <form action="/submit-form" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <button type="submit">Submit</button>
             </form>
+          
         </div>
         <div class="media"><!-- right side of page medias-->
             <h2>Media</h2>
             <p>add social media, offical pages, and content creators</p>
-            <a href="https://www.formula1.com/">F1 Page</a>
+            
+               <!-- <a href="https://www.instagram.com/f1/" class="image-link">
+                    <img src="images/insta_logo.jpg" alt="Insta logo" class="small-image">
+                </a>-->
+                <a href="https://www.formula1.com/" class="image-link">
+                    <img src="images/F1logo.png" alt="Formula 1 official logo" class="small-image">
+                </a>
+                <a href="https://www.formula1.com/">F1 Page</a>
         </div>
+            
+            
     </div>
-    
+
     <p>Kennesaw State Univerity Project</p><!-- footer -->
 
 </body>
