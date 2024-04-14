@@ -616,6 +616,17 @@
 }
 
 /* --------drivers.html------------------------------------------------------------------------------------------------------------------------------------ */
+.drive{
+    background-color: rgb(163, 154, 154);
+}
+.drive p{
+    text-align: center; /* centers link in box */
+    padding: 3px;
+    background-color: #333;
+    text-decoration: none; /* gets rid of underline */
+    color: #ffffff;
+    border-radius: 3px; /* shape of box */
+}
 
 .teams {
     display: grid;
@@ -672,6 +683,7 @@
 .redbullcar img{
     float: left;  /* car image is on left side */
     margin-top: 50px;
+    
 }
 
 .redbull img {
@@ -908,6 +920,49 @@
     display: block; /* Ensure images stack vertically */
     margin-bottom: 10px; /* Add space between stacked images */
 }
+
+/* styles.css */
+.user {
+   /* background of form */
+    padding-left: 28%; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(163, 154, 154);
+    
+}
+
+h3 {/* hearder size */
+    margin-top: 0;
+    font-size: 50px;
+   
+    
+}
+
+
+form label {/* orientation and display of labels */
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+form label {
+    display: inline-block;
+    width: auto; /*  width  */
+    margin-bottom: 8px; /*  spacing between labels */
+}
+
+form input[type="radio"] {
+    display: inline-block;
+    vertical-align: middle; /* radio buttons vertically with labels */
+}
+
+
+
+form button {
+    margin-top: 10px;
+}
+
 
 
 

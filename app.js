@@ -12,8 +12,19 @@ app.get('/', (req, res) => {
 });
 
 app.post('/submit-form', (req, res) => {
-    const username = req.body.username;
-    res.send(`Username is ${username}`);
+    const favoritedriver = req.body.favoritedriver;
+    const favoriteteam = req.body.favoriteteam;
+    const watchingyear = req.body.watchingyear;
+    const time = req.body.time;
+    const attend = req.body.attend;
+
+    
+    // Concatenate all the data into a single string
+    const userInput = `Favorite driver is ${favoritedriver}, Favorite 2024 team is ${favoriteteam}, Year you started watching is ${watchingyear},
+     Race time: ${time}, Attend race: ${attend} `;
+
+    // calls unserInput
+    res.send(userInput);
 });
 
 app.listen(port, () => {

@@ -32,26 +32,72 @@
     <h1>Fan Interaction Page</h1>
 
     <div class="container">
-        <div class="user"><!-- left side of page user form -->
-            <p>Put form here</p> <br>
-            <form action="/submit-form" method="post">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-                <button type="submit">Submit</button>
+        <div class="user">
+            <!-- left side of page user form -->
+            <h3>F1 Fan Form</h3>
+            <!-- HTML -->
+
+       
+            <form action="/submit-form" method="post"><!-- calls app.js to validate from input-->
+                <label for="favoritedriver">All time favorite driver:</label><!-- label prompt-->
+                <input type="text" id="favoritedriver" name="favoritedriver" required><!-- user has to answer-->
+                <br>
+                
+                <label for="favoriteteam">Who is your favorite 2024 team?:</label><!-- label prompt-->
+                <input type="text" id="favoriteteam" name="favoriteteam" required><!-- user has to answer-->
+                <br>
+                <label for="watchingyear">What year did you start watching F1?:</label><!-- label prompt-->
+                <input type="text" id="watchingyear" name="watchingyear" required><!-- user has to answer-->
+                <br>
+                <label for="time">Do you like day or night races?</label><!-- radio prompt-->
+                <div>
+                    <input type="radio" id="day" name="time" value="day" >
+                    <label for="day">Day</label>
+                </div>
+           
+                <div>
+                    <input type="radio" id="night" name="time" value="night">
+                    <label for="night">Night</label>
+                </div>
+                <br>
+                
+                <label for="attend">Have you ever attended a F1 race?</label><!-- radio prompt-->
+                <div>
+                    <input type="radio" id="yes" name="attend" value="yes" >
+                    <label for="yes">Yes</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="no" name="attend" value="no">
+                    <label for="no">No</label>
+                </div>
+                <br>
+                <button type="submit">Submit</button><!-- submit input-->
+                <button type="reset">Clear</button><!-- clear form inputs-->
             </form>
-          
         </div>
+        
         <div class="media"><!-- right side of page medias-->
             <h2>Media</h2>
-            <p>add social media, offical pages, and content creators</p>
-            
-               <!-- <a href="https://www.instagram.com/f1/" class="image-link">
-                    <img src="images/insta_logo.jpg" alt="Insta logo" class="small-image">
-                </a>-->
+           
+            <!-- icon image linksof socials for f1 community -->
+              
                 <a href="https://www.formula1.com/" class="image-link">
-                    <img src="images/F1logo.png" alt="Formula 1 official logo" class="small-image">
+                    <img src="images/f1.jpg" alt="Formula 1 official logo" class="small-image">
                 </a>
-                <a href="https://www.formula1.com/">F1 Page</a>
+                <a href="https://www.youtube.com/@RicksF1Addictionn" class="image-link">
+                    <img src="images/youtube_1.jpg" alt="F1 addiction" class="small-image">
+                </a>
+                <a href="https://www.youtube.com/@Quadrant" class="image-link">
+                    <img src="images/youtube2.jpg" alt="Quadrant" class="small-image">
+                </a>
+                <a href="https://www.youtube.com/@mattp1tommy" class="image-link">
+                    <img src="images/youtube3.jpg" alt="P1" class="small-image">
+                </a>
+                <a href="https://www.instagram.com/f1/" class="image-link">
+                    <img src="images/insta_logo.jpg" alt="Insta logo" class="small-image">
+                </a>
+               
         </div>
             
             
