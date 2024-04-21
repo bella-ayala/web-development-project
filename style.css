@@ -84,7 +84,7 @@
     padding: 10px;
     padding-left: 80px;/* spacing on from the left */
     box-sizing: border-box; /* border around images*/
-    box-shadow: 0 40px 80px rgba(0, 0, 0, 1); /* gray drop shadow */
+    box-shadow: 0 80px 100px rgba(0, 0, 0, 1); /* gray drop shadow */
 
 }
 
@@ -961,6 +961,10 @@ form input[type="radio"] {
 
 form button {
     margin-top: 10px;
+}
+
+.media img {
+    padding-left: 30%; /* centers images */
 }
 
 
